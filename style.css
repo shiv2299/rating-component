@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+}
+body{
+    background-color: #141519;
+    font-family: 'Overpass', sans-serif;
+}
+main{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+}
+p{
+    font-size: 15px;
+}
+.hidden{
+    display: none!important;
+}
+.card{
+    background:linear-gradient(#222933,#171E28);
+    width: 35vw;
+    max-width: 420px;
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+#rating-component,#thank-you-component{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+#thank-you-component{
+    align-items: center;
+}
+.star-icon,#rating-container .number{
+    background-color: #252E37;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card h1{
+    color: white;
+    margin-top: 2rem;
+    font-weight: 500;
+}
+.card p{
+    color:hsl(216, 12%, 54%);
+    line-height: 1.5rem;
+}
+#rating-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    color:hsl(216, 12%, 54%);
+}
+#rating-container .number{
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+    transition: .3s;
+}
+#rating-container .number:hover{
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+}
+.selected-number{
+    background-color: hsl(25, 97%, 53%) !important;
+    color: white;
+}
+.submit-btn{
+    color: white;
+    border:none;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 50px;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    transition: .3s;
+}
+.submit-btn:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+}
+.selection{
+    color: hsl(25, 97%, 53%) !important;
+    background-color: #252E37;
+    border-radius: 50px;
+    padding: 0.3rem 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+#thank-you-component h2{
+    color: white;
+    margin-bottom: 1rem;
+}
+#thank-you-component p{
+    text-align: center;
+}
+.attribution{
+    position: absolute;
+    bottom:0;
+    color: white;
+}
+@media screen and (max-width:768px){
+    .card{
+        width: 80vw;
+        padding: 1rem;
+    }
+}
